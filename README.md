@@ -1,6 +1,8 @@
 # No-PostHog 🛡️
 
 A Chrome extension that blocks PostHog analytics tracking while maintaining website functionality.
+![](https://github.com/LongpanZhou/No-Posthog/blob/main/Screenshot%202025-11-30%20at%201.48.25%20AM.png)
+![](https://github.com/LongpanZhou/No-Posthog/blob/main/Screenshot%202025-11-30%20at%201.53.21%20AM.png)
 
 ## Features
 
