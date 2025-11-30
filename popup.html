@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>No-Posthog</h1>
+    <p class="description">Block PostHog analytics tracking</p>
+    
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="enableToggle" checked>
+        <span class="slider"></span>
+      </label>
+      <span id="status">Blocking ON</span>
+    </div>
+    
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="loggingToggle" checked>
+        <span class="slider"></span>
+      </label>
+      <span id="loggingStatus">Logging ON</span>
+    </div>
+    
+    <div class="info">
+      <p>Blocks PostHog analytics via payload detection.</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

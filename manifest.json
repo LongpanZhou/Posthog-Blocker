@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "No-Posthog",
+  "version": "1.0.2",
+  "description": "Block PostHog analytics tracking",
+  "icons": {
+    "16": "posthog logo.png",
+    "48": "posthog logo.png",
+    "128": "posthog logo.png"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "No-Posthog",
+    "default_icon": {
+      "16": "posthog logo.png",
+      "48": "posthog logo.png",
+      "128": "posthog logo.png"
+    }
+  }
+}
